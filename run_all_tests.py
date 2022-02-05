@@ -83,8 +83,8 @@ def run_All_tests():
         test_1st_result = get_output_xml_results(test_1st,xml_test_1st)
         test_od_result = get_output_xml_results(od_test,xml_od_test)
 
-        os.system('mv ' + xml_test_1st +'./xml_log/'+md5_str+'_1.xml')
-        os.system('mv ' + xml_od_test +'./xml_log/'+md5_str+'_2.xml')
+        os.system('mv ' + xml_test_1st +' ./xml_log/'+md5_str+'_1.xml')
+        os.system('mv ' + xml_od_test +' ./xml_log/'+md5_str+'_2.xml')
 
         final_result = []
         for each in test_1st_result.split(','):
