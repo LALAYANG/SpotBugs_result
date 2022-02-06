@@ -4,8 +4,9 @@ from hashlib import md5
 from bs4 import BeautifulSoup
 
 
-test_before_od_csv = './all_run_hadoop.csv'
-save_csv = './result_hadoop.csv'
+#test_before_od_csv = './SpotBugs_result/all_run_final_junit.csv'
+test_before_od_csv='./test.csv'
+save_csv = './result_junit_final0_test.csv'
 
 
 def get_output_xml_results(testcase_name, xml_file):
@@ -45,6 +46,8 @@ def get_output_xml_results(testcase_name, xml_file):
                 if testcase_name in eachtest:
                     return eachtest
         return 'ERROR_Parse'
+    except FileNotFoundError:
+        return 'FileNotFoundError'
 
 def run_All_tests():
     hash_md5 = md5()
@@ -83,8 +86,8 @@ def run_All_tests():
         test_1st_result = get_output_xml_results(test_1st,xml_test_1st)
         test_od_result = get_output_xml_results(od_test,xml_od_test)
 
-        os.system('mv ' + xml_test_1st +' ./xml_log/'+md5_str+'_1.xml')
-        os.system('mv ' + xml_od_test +' ./xml_log/'+md5_str+'_2.xml')
+        os.system('mv ' + xml_test_1st +' ./xml_log_jq_test/'+md5_str+'_1.xml')
+        os.system('mv ' + xml_od_test +' ./xml_log_jq_test/'+md5_str+'_2.xml')
 
         final_result = []
         for each in test_1st_result.split(','):
