@@ -12,8 +12,9 @@ save_csv = './result_junit_final0_test.csv'
 def get_output_xml_results(testcase_name, xml_file):
 
     os.system('echo $(pwd)')
-    with open(xml_file) as fp:
-        xml_content = BeautifulSoup(fp, features="xml")
+    try:
+        with open(xml_file) as fp:
+            xml_content = BeautifulSoup(fp, features="xml")
         tout = []
         failedconstructor = ""
         tests = set()
@@ -36,7 +37,6 @@ def get_output_xml_results(testcase_name, xml_file):
                     t = str.format("{}.{}=DUPLICATE", eachtest["classname"], eachtest["name"])
                 tests.add(t)
             tout.append(str.format("{},{},{}", t, test_result, eachtest["time"]))
-
 
         if failedconstructor != "":
             return failedconstructor
