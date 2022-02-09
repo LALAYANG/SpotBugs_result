@@ -1,0 +1,13 @@
+com.querydsl.hibernate.search.SearchSerializerTest.toField,pass,0,com.querydsl.hibernate.search.SearchQueryTest.singleResult,failure,0.661,554b894852741e873317040e471e997f
+com.querydsl.hibernate.search.SearchQueryTest.exists,pass,0.599,com.querydsl.hibernate.search.SearchQueryTest.singleResult,failure,0.134,eb9dcec0f1405adc28d3234ecdc0f5ec
+com.querydsl.hibernate.search.SearchQueryTest.paging,failure,0.734,com.querydsl.hibernate.search.SearchQueryTest.singleResult,failure,0.117,7da06284c2d974bf73a6eff2544490d6
+com.querydsl.hibernate.search.SearchQueryTest.list,pass,0.634,com.querydsl.hibernate.search.SearchQueryTest.singleResult,failure,0.106,f43cb19edde2530c5f55656c4846c13b
+com.querydsl.hibernate.search.SearchQueryTest.count,failure,0.6,com.querydsl.hibernate.search.SearchQueryTest.singleResult,failure,0.132,0be7adbfd9d420373cf8b6092e556a89
+com.querydsl.hibernate.search.SearchQueryTest.uniqueResult,pass,0.648,com.querydsl.hibernate.search.SearchQueryTest.singleResult,failure,0.115,28693f978d19915080f4d16ebe5f25bc
+com.querydsl.hibernate.search.SearchQueryTest.notExists,pass,0.638,com.querydsl.hibernate.search.SearchQueryTest.singleResult,failure,0.137,5c0950777d01a33d06c5c950f5267e76
+com.querydsl.hibernate.search.SearchQueryTest.unique_result_throws_exception_on_multiple_results,pass,0.684,com.querydsl.hibernate.search.SearchQueryTest.singleResult,failure,0.099,a2e47ae900b7d86c3bd2838cf83aab2b
+com.querydsl.hibernate.search.SearchQueryTest.no_where,pass,0.654,com.querydsl.hibernate.search.SearchQueryTest.singleResult,failure,0.138,513b9f0cd4f57632f846c558e4eff7ec
+com.querydsl.hibernate.search.SearchQueryTest.ordering,pass,0.72,com.querydsl.hibernate.search.SearchQueryTest.singleResult,failure,0.105,6fc3bd2053ea968705eedd65f0062c24
+com.querydsl.hibernate.search.SearchQueryTest.limit_max_value,pass,0,com.querydsl.hibernate.search.SearchQueryTest.singleResult,failure,0.637,fa28ed958f7bf205b042d0aff89c3ce1
+com.querydsl.hibernate.search.SearchQueryTest.listResults,failure,0.747,com.querydsl.hibernate.search.SearchQueryTest.singleResult,failure,0.106,7b3ea8283e464db92c4aed82524479a2
+com.querydsl.hibernate.search.SearchQueryTest.singleResult,failure,0.657,com.querydsl.hibernate.search.SearchQueryTest.singleResult,failure,0.657,dccd0efcebfc5c8da9c29b49b9d2ef50
